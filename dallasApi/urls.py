@@ -22,7 +22,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('DjangoAPIapp.urls')),
+    path('api/v1/', include('DjangoApp.urls')),
     #path('api/v1/auth/auth-token', obtain_auth_token, name='obtain-auth-token')
     path('auth/register/', RegistrationAPIView.as_view(), name='register'),
     path('auth/login/', TokenObtainPairView.as_view(), name='login'),
