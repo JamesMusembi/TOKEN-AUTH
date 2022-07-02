@@ -57,6 +57,13 @@ CORS_ALLOWED_ORIGINS = [
 "https://web.postman.co",
 ]
 
+CORS_ALLOW_METHODS = [
+"GET",
+"PUT",
+"DELETE",
+"POST",
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
